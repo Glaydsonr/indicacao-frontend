@@ -10,29 +10,33 @@
         </div>
 
         <div class="card-body">
-            <form action="src/create-ajax.php" id="create" class="form" method="POST" enctype="multipart/form-data">
-                <div class="mb-3">
+            <form action="" id="create" class="form" method="POST" enctype="multipart/form-data">
+                <div class="mb-3 field_name">
                     <label for="name">Nome:</label>
                     <input type="text" name="name" class="form-control"
                            placeholder="Nome" value="">
                 </div>
 
-                <div class="mb-3">
+                <div class="mb-3 field_cpf">
                     <label for="name">CPF:</label>
                     <input type="text" name="cpf" class="form-control" id="cpf"
                            placeholder="CPF" value="">
                 </div>
 
-                <div class="mb-3">
+                <div class="mb-3 field_email">
                     <label for="name">Email:</label>
                     <input type="text" name="email" class="form-control"
                            placeholder="Email" value="">
                 </div>
 
-                <div class="mb-3">
+                <div class="mb-3 field_phone">
                     <label for="name">Telefone:</label>
                     <input type="text" name="phone" class="form-control" id="phone"
                            placeholder="Telefone" value="">
+                </div>
+
+                <div class="mb-3">
+                    <input type="hidden" type="text" name="status_id" id="status_id" value="1">
                 </div>
 
                 <div class="mb-3">
@@ -44,6 +48,5 @@
         </div>
     </div>
 </div>
-
 
 <?php include 'view/template-parts/footer.php'; ?>
